@@ -1,0 +1,40 @@
+{
+  "title": "Intermediate Level (Styles & Collaborative Editing)",
+  "breadcrumb": "Intermediate Level",
+  "sections": [
+    {
+      "id": "styles",
+      "title": "Mastering Paragraph & Character Styles",
+      "content": [
+        "In Adobe InCopy, typography styles serve as the architectural foundation of editorial consistency. Layout designers define master styles in InDesign, allowing editors to seamlessly apply them without accidentally breaking publication design guidelines.",
+        "Paragraph styles govern entire text blocks (headings, subheads, body copy), whereas Character styles pinpoint inline exceptions such as bold lead-ins, citations, or italic emphasis."
+      ],
+      "imagePlaceholder": "Figure 4: Paragraph Styles Panel and Live Typography Formatting"
+    },
+    {
+      "id": "track-changes",
+      "title": "Track Changes & Editorial Revisions",
+      "content": [
+        "The Track Changes ecosystem empowers teams to monitor every editorial revision, strike-through, and insertion with surgical precision.",
+        "Editors and copy-chiefs can accept or reject individual edits, leave reviewer comments, and maintain comprehensive audit trails for team-wide transparency."
+      ],
+      "cards": [
+        {
+          "number": "1",
+          "title": "Enabling Track Changes",
+          "description": "Navigate to Window > Editorial > Track Changes to reveal the panel, then activate tracking with a single click."
+        },
+        {
+          "number": "2",
+          "title": "Story View Workflow",
+          "description": "Utilize Story View (Ctrl+Y / Cmd+Y) to inspect raw editorial copy and revisions without visual distraction from complex layout graphics."
+        }
+      ],
+      "imagePlaceholder": "Figure 5: Story View Mode Displaying Inline Revision Tracking"
+    }
+  ],
+  "video": {
+    "title": "02. InDesign Integration & Revision Management",
+    "duration": "25:00"
+  }
+}

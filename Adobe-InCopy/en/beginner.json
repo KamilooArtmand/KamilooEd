@@ -1,0 +1,36 @@
+{
+  "title": "Beginner Level (Fundamentals & Basics)",
+  "breadcrumb": "Beginner Level",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction & Use Cases",
+      "content": [
+        "Adobe InCopy 2026 is a professional word processing program designed specifically for copywriters, editors, and proofreaders. The greatest power of InCopy lies in its seamless, deep integration with Adobe InDesign.",
+        "Historically, while a layout designer was actively working in InDesign, the editorial team could not touch the document. With the InCopy-InDesign collaborative workflow, designers and editors can work concurrently on the exact same project without overwriting each other's work."
+      ],
+      "imagePlaceholder": "Figure 2: InCopy and InDesign Collaborative Workflow Architecture"
+    },
+    {
+      "id": "ui",
+      "title": "Understanding the User Interface (UI)",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Primary Tools Panel",
+          "description": "Located on the left edge by default, housing essential tools such as the Type Tool for copy editing, and Selection Tools for navigational control."
+        },
+        {
+          "number": "2",
+          "title": "Dynamic Control Panel",
+          "description": "Positioned at the top of the workspace, dynamically reflecting formatting options (typefaces, sizing, kerning, tracking, and leading) based on your active selection."
+        }
+      ],
+      "imagePlaceholder": "Figure 3: Annotated InCopy 2026 Workspace and Panels Overview"
+    }
+  ],
+  "video": {
+    "title": "01. Complete Overview and History of InCopy 2026",
+    "duration": "15:00"
+  }
+}

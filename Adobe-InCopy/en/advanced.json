@@ -1,0 +1,28 @@
+{
+  "title": "Advanced Level (Automation, Power Shortcuts & Production)",
+  "breadcrumb": "Advanced Level",
+  "sections": [
+    {
+      "id": "macros",
+      "title": "Advanced Shortcuts & Editorial Productivity",
+      "content": [
+        "In high-tempo editorial rooms, speed and muscle memory are everything. InCopy permits deep keyboard customization and macro mapping for repetitive phrasing and character cleanup.",
+        "Under Edit > Keyboard Shortcuts, editors can tailor a custom keyboard profile, reducing multi-click actions to instant key chords."
+      ],
+      "imagePlaceholder": "Figure 6: Keyboard Shortcut Customization Dialog in InCopy 2026"
+    },
+    {
+      "id": "automation",
+      "title": "Complex Data Tables & Pre-press Export",
+      "content": [
+        "Managing statistical reports and complex multi-page tables can be tedious. InCopy provides complete control over row insertions, header repeats, cell formatting, and tabular alignments.",
+        "Pro Tip: Always synchronize Table and Cell Styles directly linked from InDesign master packages instead of applying ad-hoc manual cell borders."
+      ],
+      "imagePlaceholder": "Figure 7: Advanced Table Editing and Style Synchronization in Layout View"
+    }
+  ],
+  "video": {
+    "title": "03. Advanced Automation, Table Mastery & Final Delivery",
+    "duration": "30:00"
+  }
+}
