@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 import SearchBar from "./components/SearchBar";
@@ -37,9 +38,9 @@ export default function RootLayout({
                 <span className="font-semibold text-lg tracking-tight text-gray-900">Kamiloo Ed</span>
               </div>
               <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-                <a href="/" className="hover:text-blue-600 transition-colors">خانه</a>
-                <a href="/courses/adobe-incopy-2026" className="hover:text-blue-600 transition-colors">دوره‌ها</a>
-                <a href="#" className="hover:text-blue-600 transition-colors">مقاله‌ها</a>
+                <Link href="/" className="hover:text-blue-600 transition-colors">خانه</Link>
+                <Link href="/courses/adobe-incopy-2026" className="hover:text-blue-600 transition-colors">دوره‌ها</Link>
+                <Link href="#" className="hover:text-blue-600 transition-colors">مقاله‌ها</Link>
               </div>
               <div className="flex items-center gap-3">
                 <SearchBar />

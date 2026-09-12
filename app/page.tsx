@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="w-full flex flex-col items-center justify-center space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 ease-out">
@@ -24,12 +26,12 @@ export default function Home() {
       <section className="w-full pt-16">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-800">جدیدترین دوره‌ها</h2>
-          <a href="#" className="text-blue-600 text-sm font-medium hover:underline">مشاهده همه</a>
+          <Link href="#" className="text-blue-600 text-sm font-medium hover:underline">مشاهده همه</Link>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Adobe InCopy Course Card */}
-          <a href="/courses/adobe-incopy-2026" className="group block h-full">
+          <Link href="/courses/adobe-incopy-2026" className="group block h-full">
             <div className="liquid-glass rounded-[2rem] p-4 h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-white/60">
               <div className="aspect-[4/3] w-full bg-gray-100 rounded-3xl mb-6 overflow-hidden relative border border-gray-200/50">
                 {/* Placeholder for Course Thumbnail */}
@@ -61,7 +63,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
           
           {/* Empty placeholders for other courses to show layout */}
           {[2, 3].map((num) => (
