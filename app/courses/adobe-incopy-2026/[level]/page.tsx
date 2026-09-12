@@ -7,20 +7,6 @@ interface PageProps {
   params: Promise<{ level: string }>;
 }
 
-interface Card {
-  number: string | number;
-  title: string;
-  description: string;
-}
-
-interface Section {
-  id: string;
-  title: string;
-  content?: string[];
-  cards?: Card[];
-  imagePlaceholder?: string;
-}
-
 export default async function LevelPage({ params }: PageProps) {
   const { level } = await params;
   
