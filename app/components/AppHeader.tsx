@@ -29,9 +29,18 @@ export default function AppHeader() {
           <Link href="/courses/adobe-incopy-2026" className="hover:text-blue-600 transition-colors">
             {t("nav_courses")}
           </Link>
-          <a href="#" className="hover:text-blue-600 transition-colors opacity-70">
-            {t("nav_articles")}
-          </a>
+          <Link href="/graphics" className="hover:text-blue-600 transition-colors">
+            {t("nav_graphics")}
+          </Link>
+          <Link href="/web-dev" className="hover:text-blue-600 transition-colors">
+            {t("nav_web")}
+          </Link>
+          <Link href="/prompt-bank" className="hover:text-blue-600 transition-colors">
+            {t("nav_prompt_bank")}
+          </Link>
+          <Link href="/gallery" className="hover:text-blue-600 transition-colors">
+            {t("nav_gallery")}
+          </Link>
         </div>
 
         {/* Actions (Search + Language Switcher) */}
