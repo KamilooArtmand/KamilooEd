@@ -1,0 +1,265 @@
+{
+  "communities": {
+    "0": [
+      "app_components_appheader",
+      "app_components_appheader_appheader",
+      "app_components_languageswitcher",
+      "app_components_languageswitcher_languageswitcher",
+      "app_components_searchbar",
+      "app_components_searchbar_search_database",
+      "app_components_searchbar_searchbar",
+      "app_components_searchbar_searchbar_handleclickoutside",
+      "app_context_languagecontext_uselanguage",
+      "app_courses_adobe_incopy_2026_page",
+      "app_courses_adobe_incopy_2026_page_courseincopy",
+      "app_gallery_page",
+      "app_gallery_page_gallerypage",
+      "app_graphics_page",
+      "app_graphics_page_graphicspage",
+      "app_page",
+      "app_page_home",
+      "app_prompt_bank_page",
+      "app_prompt_bank_page_promptbankpage",
+      "app_web_dev_page",
+      "app_web_dev_page_webdevpage",
+      "next_config",
+      "next_config_nextconfig",
+      "ref_next"
+    ],
+    "1": [
+      "app_components_appfooter",
+      "app_components_appfooter_appfooter",
+      "app_context_languagecontext",
+      "app_context_languagecontext_direction",
+      "app_context_languagecontext_getserversnapshot",
+      "app_context_languagecontext_getsnapshot",
+      "app_context_languagecontext_language",
+      "app_context_languagecontext_languagecontext",
+      "app_context_languagecontext_languagecontexttype",
+      "app_context_languagecontext_languageprovider",
+      "app_context_languagecontext_subscribe",
+      "app_context_languagecontext_translations",
+      "app_globals",
+      "app_layout",
+      "app_layout_inter",
+      "app_layout_metadata",
+      "app_layout_robotoflex",
+      "app_layout_rootlayout",
+      "app_layout_vazir",
+      "app_layout_viewport"
+    ],
+    "2": [
+      "eslint_config",
+      "eslint_config_eslintconfig",
+      "package",
+      "package_dependencies",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_name",
+      "package_private",
+      "package_version",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_react_dom",
+      "ref_tailwindcss",
+      "ref_tailwindcss_postcss",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
+    ],
+    "3": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "4": [
+      "app_courses_adobe_incopy_2026_level_levelviewer",
+      "app_courses_adobe_incopy_2026_level_levelviewer_coursedata",
+      "app_courses_adobe_incopy_2026_level_levelviewer_levelviewer",
+      "app_courses_adobe_incopy_2026_level_levelviewer_levelviewerprops",
+      "app_courses_adobe_incopy_2026_level_levelviewer_section",
+      "app_courses_adobe_incopy_2026_level_levelviewer_sectioncard",
+      "app_courses_adobe_incopy_2026_level_page",
+      "app_courses_adobe_incopy_2026_level_page_levelpage",
+      "app_courses_adobe_incopy_2026_level_page_pageprops",
+      "ref_fs",
+      "ref_path",
+      "ref_react"
+    ],
+    "5": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript"
+    ],
+    "6": [
+      "public_manifest",
+      "public_manifest_background_color",
+      "public_manifest_description",
+      "public_manifest_display",
+      "public_manifest_icons",
+      "public_manifest_name",
+      "public_manifest_short_name",
+      "public_manifest_start_url",
+      "public_manifest_theme_color"
+    ],
+    "7": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start"
+    ],
+    "8": [
+      "postcss_config",
+      "postcss_config_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14855072463768115,
+    "1": 0.14210526315789473,
+    "2": 0.1111111111111111,
+    "3": 0.10526315789473684,
+    "4": 0.19696969696969696,
+    "5": 0.2222222222222222,
+    "6": 0.2222222222222222,
+    "7": 0.4,
+    "8": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_context_languagecontext_uselanguage",
+      "label": "useLanguage()",
+      "degree": 23
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "degree": 9
+    },
+    {
+      "id": "app_components_appheader_appheader",
+      "label": "AppHeader()",
+      "degree": 6
+    },
+    {
+      "id": "app_context_languagecontext_languageprovider",
+      "label": "LanguageProvider()",
+      "degree": 6
+    },
+    {
+      "id": "app_components_searchbar_searchbar",
+      "label": "SearchBar()",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "app_components_appfooter_appfooter",
+      "label": "AppFooter()",
+      "degree": 4
+    },
+    {
+      "id": "app_components_languageswitcher_languageswitcher",
+      "label": "LanguageSwitcher()",
+      "degree": 4
+    },
+    {
+      "id": "app_courses_adobe_incopy_2026_level_levelviewer_levelviewer",
+      "label": "LevelViewer()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AppFooter()",
+      "target": "useLanguage()",
+      "source_files": [
+        "app/components/AppFooter.tsx",
+        "app/context/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "RootLayout()",
+      "target": "AppHeader()",
+      "source_files": [
+        "app/layout.tsx",
+        "app/components/AppHeader.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "LevelViewer()",
+      "target": "useLanguage()",
+      "source_files": [
+        "app/courses/adobe-incopy-2026/[level]/LevelViewer.tsx",
+        "app/context/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CourseInCopy()",
+      "target": "useLanguage()",
+      "source_files": [
+        "app/courses/adobe-incopy-2026/page.tsx",
+        "app/context/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `CourseInCopy()` unexpectedly reaches hub `useLanguage()`"
+    },
+    {
+      "source": "GalleryPage()",
+      "target": "useLanguage()",
+      "source_files": [
+        "app/gallery/page.tsx",
+        "app/context/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `GalleryPage()` unexpectedly reaches hub `useLanguage()`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

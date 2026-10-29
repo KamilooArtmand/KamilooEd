@@ -39,3 +39,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Heavy media and binary files
+*.pdf
+*.epub
+*.mobi
+*.mp4
+*.mov
+*.mkv
+*.zip
+*.tar
+*.gz
+*.iso
+*.exe
+*.dmg
+*.dll
+*.db
+*.sqlite
+.graphifyrc
+.graphifyrc*
