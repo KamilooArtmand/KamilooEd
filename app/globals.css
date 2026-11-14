@@ -1,3 +1,448 @@
+/* ==============================================================================
+   UNIVERSAL ARGON DESIGN SYSTEM — MASTER STYLESHEET
+   OKLCH Tokens, Light Mode Polarity, Liquid Glass & Micro-Surfaces
+   ============================================================================== */
+
+@layer base {
+  :root,
+  .light {
+    color-scheme: light;
+
+    /* ==========================================================================
+       1. SURFACE & CANVAS HIERARCHY (LIGHT POLARITY — DEFAULT)
+       ========================================================================== */
+    /* Primary architectural background canvas (Cool Alabaster: #F6F7F9) */
+    --bg-canvas: oklch(0.973 0.003 255.0);
+    /* Secondary recessed well / grouped list background (#F3F4F6) */
+    --bg-canvas-subtle: oklch(0.967 0.003 264.5);
+    /* Deep recessed track / code block / input well (#EBEEF2) */
+    --bg-canvas-recessed: oklch(0.946 0.005 255.0);
+
+    /* Level 1 Surface: Primary cards, panels, active workspace (#FFFFFF) */
+    --surface-primary: oklch(1.000 0.000 0.0);
+    /* Level 2 Surface: Hover state on primary surface (#F9FAFB) */
+    --surface-hover: oklch(0.985 0.002 247.8);
+    /* Level 3 Surface: Active/Pressed state on surface (#F3F4F6) */
+    --surface-active: oklch(0.967 0.003 264.5);
+    /* Level 4 Surface: Floating popovers, dropdowns, modals (#FFFFFF) */
+    --surface-elevated: oklch(1.000 0.000 0.0);
+    /* Inverted High-Contrast Surface: Primary CTA, active pill, tooltips (#09090B) */
+    --surface-inverted: oklch(0.141 0.005 285.8);
+    --surface-inverted-hover: oklch(0.210 0.006 285.8);
+
+    /* ==========================================================================
+       2. LIQUID GLASSMORPHISM & TRANSLUCENT DECK TOKENS (LIGHT)
+       ========================================================================== */
+    /* Floating navigation bar, sticky headers, command palette shell */
+    --glass-surface-primary: oklch(1.000 0.000 0.0 / 0.78);
+    --glass-surface-elevated: oklch(0.985 0.002 247.8 / 0.86);
+    --glass-surface-subtle: oklch(0.967 0.003 264.5 / 0.65);
+    --glass-backdrop-overlay: oklch(0.141 0.005 285.8 / 0.24);
+    --glass-specular-highlight: inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.90);
+
+    /* ==========================================================================
+       3. TYPOGRAPHY & ICONOGRAPHY INK HIERARCHY (LIGHT)
+       ========================================================================== */
+    /* Razor-sharp primary headings & vector glyphs (#000000 / #09090B) */
+    --ink-primary: oklch(0.141 0.005 285.8);
+    --ink-pure: oklch(0.000 0.000 0.0);
+    /* Secondary body copy & balanced UI labels (#4B5563) */
+    --ink-secondary: oklch(0.446 0.026 256.8);
+    /* Tertiary metadata, timestamps, kbd hints, inactive icons (Titanium Gray: #A2A8B2) */
+    --ink-tertiary: oklch(0.730 0.015 255.0);
+    /* Disabled controls & placeholder text (#C4C9D1) */
+    --ink-disabled: oklch(0.835 0.010 255.0);
+    /* Ink on inverted surfaces (#FFFFFF) */
+    --ink-on-inverted: oklch(1.000 0.000 0.0);
+
+    /* ==========================================================================
+       4. STRUCTURAL 1PX HAIRLINES & FOCUS GEOMETRY (LIGHT)
+       ========================================================================== */
+    /* Whisper-quiet section dividers & inner grid lines (#ECEEF2) */
+    --border-subtle: oklch(0.948 0.004 255.0);
+    /* Standard card, input, and button structural hairline (#E2E5EB) */
+    --border-default: oklch(0.918 0.006 255.0);
+    /* Interactive hover or emphasized structural border (#C8CDD6) */
+    --border-strong: oklch(0.852 0.010 255.0);
+    /* Active input or selected card border (#09090B) */
+    --border-focused: oklch(0.141 0.005 285.8);
+    /* Keyboard accessibility focus ring (2px offset optical halo) */
+    --ring-focus: oklch(0.141 0.005 285.8 / 0.18);
+    --ring-focus-solid: oklch(0.141 0.005 285.8);
+
+    /* ==========================================================================
+       5. SEMANTIC STATUS & INTENT TOKENS (OPTICALLY CALIBRATED — LIGHT)
+       ========================================================================== */
+    /* Positive / Operational / Emerald */
+    --status-success-bg: oklch(0.962 0.035 156.0);
+    --status-success-border: oklch(0.885 0.075 156.0);
+    --status-success-ink: oklch(0.435 0.115 156.0);
+    --status-success-dot: oklch(0.580 0.150 156.0);
+
+    /* Warning / Degraded / Amber */
+    --status-warning-bg: oklch(0.968 0.042 82.0);
+    --status-warning-border: oklch(0.895 0.092 82.0);
+    --status-warning-ink: oklch(0.470 0.120 74.0);
+    --status-warning-dot: oklch(0.680 0.155 78.0);
+
+    /* Danger / Destructive / Crimson */
+    --status-danger-bg: oklch(0.960 0.032 22.0);
+    --status-danger-border: oklch(0.880 0.075 22.0);
+    --status-danger-ink: oklch(0.465 0.165 24.5);
+    --status-danger-dot: oklch(0.575 0.195 25.0);
+
+    /* Informational / System Accent / Cobalt */
+    --status-info-bg: oklch(0.962 0.028 252.0);
+    --status-info-border: oklch(0.885 0.068 252.0);
+    --status-info-ink: oklch(0.450 0.145 254.0);
+    --status-info-dot: oklch(0.560 0.175 254.0);
+
+    /* ==========================================================================
+       6. AMBIENT ELEVATION & TACTILE SHADOWS (LIGHT)
+       ========================================================================== */
+    --shadow-xs: 0 1px 2px 0 oklch(0.141 0.005 285.8 / 0.03);
+    --shadow-sm:
+      0 1px 2px -1px oklch(0.141 0.005 285.8 / 0.04),
+      0 2px 4px 0 oklch(0.141 0.005 285.8 / 0.03);
+    --shadow-md:
+      0 4px 8px -2px oklch(0.141 0.005 285.8 / 0.05),
+      0 2px 4px -2px oklch(0.141 0.005 285.8 / 0.03);
+    --shadow-lg:
+      0 12px 24px -4px oklch(0.141 0.005 285.8 / 0.06),
+      0 4px 8px -2px oklch(0.141 0.005 285.8 / 0.03);
+    --shadow-floating-deck:
+      0 0 0 1px oklch(0.141 0.005 285.8 / 0.06),
+      0 16px 36px -6px oklch(0.141 0.005 285.8 / 0.08),
+      0 4px 12px -2px oklch(0.141 0.005 285.8 / 0.04);
+  }
+
+  .dark {
+    color-scheme: dark;
+
+    /* ==========================================================================
+       1. SURFACE & CANVAS HIERARCHY (OBSIDIAN DARK POLARITY)
+       ========================================================================== */
+    /* Primary void canvas (Deep Carbon: #08080A) */
+    --bg-canvas: oklch(0.132 0.004 285.0);
+    /* Secondary structural background (#0C0D10) */
+    --bg-canvas-subtle: oklch(0.155 0.005 280.0);
+    /* Recessed input/code well (#050507) */
+    --bg-canvas-recessed: oklch(0.110 0.004 285.0);
+
+    /* Level 1 Surface: Elevated Obsidian card/panel (#111215) */
+    --surface-primary: oklch(0.182 0.006 280.0);
+    /* Level 2 Surface: Hover state (#17181C) */
+    --surface-hover: oklch(0.210 0.007 280.0);
+    /* Level 3 Surface: Active/Pressed state (#1D1F24) */
+    --surface-active: oklch(0.238 0.008 280.0);
+    /* Level 4 Surface: Floating modal, command menu, popover (#15161A) */
+    --surface-elevated: oklch(0.200 0.007 280.0);
+    /* Inverted High-Contrast Surface: Primary CTA (#F4F4F6) */
+    --surface-inverted: oklch(0.968 0.003 264.5);
+    --surface-inverted-hover: oklch(1.000 0.000 0.0);
+
+    /* ==========================================================================
+       2. LIQUID GLASSMORPHISM & TRANSLUCENT DECK TOKENS (DARK)
+       ========================================================================== */
+    --glass-surface-primary: oklch(0.182 0.006 280.0 / 0.72);
+    --glass-surface-elevated: oklch(0.215 0.007 280.0 / 0.82);
+    --glass-surface-subtle: oklch(0.155 0.005 280.0 / 0.60);
+    --glass-backdrop-overlay: oklch(0.000 0.000 0.0 / 0.68);
+    /* Top-edge overhead light catch on obsidian surfaces */
+    --glass-specular-highlight: inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.07);
+
+    /* ==========================================================================
+       3. TYPOGRAPHY & ICONOGRAPHY INK HIERARCHY (DARK)
+       ========================================================================== */
+    /* Crisp Off-White primary text (#F4F4F6) */
+    --ink-primary: oklch(0.968 0.003 264.5);
+    --ink-pure: oklch(1.000 0.000 0.0);
+    /* Balanced secondary body text (#A1A6B0) */
+    --ink-secondary: oklch(0.725 0.014 260.0);
+    /* Muted Titanium metadata & secondary icons (#686E7A) */
+    --ink-tertiary: oklch(0.540 0.016 262.0);
+    /* Disabled text & subtle placeholders (#3E424B) */
+    --ink-disabled: oklch(0.375 0.012 265.0);
+    /* Ink on inverted light CTAs (#08080A) */
+    --ink-on-inverted: oklch(0.132 0.004 285.0);
+
+    /* ==========================================================================
+       4. STRUCTURAL 1PX HAIRLINES & FOCUS GEOMETRY (DARK)
+       ========================================================================== */
+    /* Whisper-quiet inner dividers (rgba(255,255,255,0.05)) */
+    --border-subtle: oklch(1.000 0.000 0.0 / 0.055);
+    /* Standard structural card/input border (rgba(255,255,255,0.085)) */
+    --border-default: oklch(1.000 0.000 0.0 / 0.085);
+    /* Interactive hover border (rgba(255,255,255,0.16)) */
+    --border-strong: oklch(1.000 0.000 0.0 / 0.160);
+    /* Focused input/active selection border (#F4F4F6) */
+    --border-focused: oklch(0.968 0.003 264.5);
+    /* Keyboard focus halo */
+    --ring-focus: oklch(1.000 0.000 0.0 / 0.20);
+    --ring-focus-solid: oklch(0.968 0.003 264.5);
+
+    /* ==========================================================================
+       5. SEMANTIC STATUS & INTENT TOKENS (OPTICALLY CALIBRATED — DARK)
+       ========================================================================== */
+    /* Positive / Operational / Emerald */
+    --status-success-bg: oklch(0.240 0.045 156.0 / 0.45);
+    --status-success-border: oklch(0.450 0.100 156.0 / 0.40);
+    --status-success-ink: oklch(0.790 0.135 156.0);
+    --status-success-dot: oklch(0.680 0.155 156.0);
+
+    /* Warning / Degraded / Amber */
+    --status-warning-bg: oklch(0.250 0.050 80.0 / 0.45);
+    --status-warning-border: oklch(0.480 0.110 80.0 / 0.40);
+    --status-warning-ink: oklch(0.820 0.135 82.0);
+    --status-warning-dot: oklch(0.740 0.155 80.0);
+
+    /* Danger / Destructive / Crimson */
+    --status-danger-bg: oklch(0.245 0.055 24.0 / 0.45);
+    --status-danger-border: oklch(0.460 0.130 24.0 / 0.40);
+    --status-danger-ink: oklch(0.780 0.145 24.0);
+    --status-danger-dot: oklch(0.650 0.190 25.0);
+
+    /* Informational / System Accent / Cobalt */
+    --status-info-bg: oklch(0.245 0.050 254.0 / 0.45);
+    --status-info-border: oklch(0.460 0.115 254.0 / 0.40);
+    --status-info-ink: oklch(0.795 0.125 254.0);
+    --status-info-dot: oklch(0.660 0.165 254.0);
+
+    /* ==========================================================================
+       6. AMBIENT ELEVATION & SPECULAR SHADOWS (DARK)
+       ========================================================================== */
+    --shadow-xs:
+      inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.05),
+      0 1px 2px 0 oklch(0.000 0.000 0.0 / 0.40);
+    --shadow-sm:
+      inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.06),
+      0 2px 6px -1px oklch(0.000 0.000 0.0 / 0.50);
+    --shadow-md:
+      inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.07),
+      0 8px 16px -4px oklch(0.000 0.000 0.0 / 0.60);
+    --shadow-lg:
+      inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.08),
+      0 20px 32px -8px oklch(0.000 0.000 0.0 / 0.72);
+    --shadow-floating-deck:
+      inset 0 1px 0 0 oklch(1.000 0.000 0.0 / 0.09),
+      0 0 0 1px oklch(1.000 0.000 0.0 / 0.08),
+      0 24px 48px -12px oklch(0.000 0.000 0.0 / 0.85);
+  }
+}
+
+
+@theme inline {
+  /* Surface & Canvas Tokens */
+  --color-canvas: var(--bg-canvas);
+  --color-canvas-subtle: var(--bg-canvas-subtle);
+  --color-canvas-recessed: var(--bg-canvas-recessed);
+  --color-surface: var(--surface-primary);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-active: var(--surface-active);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-inverted: var(--surface-inverted);
+  --color-surface-inverted-hover: var(--surface-inverted-hover);
+
+  /* Liquid Glass Tokens */
+  --color-glass: var(--glass-surface-primary);
+  --color-glass-elevated: var(--glass-surface-elevated);
+  --color-glass-subtle: var(--glass-surface-subtle);
+  --color-glass-overlay: var(--glass-backdrop-overlay);
+
+  /* Typography & Icon Ink Tokens */
+  --color-ink: var(--ink-primary);
+  --color-ink-pure: var(--ink-pure);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+  --color-ink-disabled: var(--ink-disabled);
+  --color-ink-inverted: var(--ink-on-inverted);
+
+  /* Border & Focus Ring Tokens */
+  --color-hairline-subtle: var(--border-subtle);
+  --color-hairline: var(--border-default);
+  --color-hairline-strong: var(--border-strong);
+  --color-hairline-focused: var(--border-focused);
+  --color-ring-focus: var(--ring-focus);
+
+  /* Semantic Status Tokens */
+  --color-success-bg: var(--status-success-bg);
+  --color-success-border: var(--status-success-border);
+  --color-success-ink: var(--status-success-ink);
+  --color-success-dot: var(--status-success-dot);
+
+  --color-warning-bg: var(--status-warning-bg);
+  --color-warning-border: var(--status-warning-border);
+  --color-warning-ink: var(--status-warning-ink);
+  --color-warning-dot: var(--status-warning-dot);
+
+  --color-danger-bg: var(--status-danger-bg);
+  --color-danger-border: var(--status-danger-border);
+  --color-danger-ink: var(--status-danger-ink);
+  --color-danger-dot: var(--status-danger-dot);
+
+  --color-info-bg: var(--status-info-bg);
+  --color-info-border: var(--status-info-border);
+  --color-info-ink: var(--status-info-ink);
+  --color-info-dot: var(--status-info-dot);
+
+  /* Box Shadows */
+  --shadow-ambient-xs: var(--shadow-xs);
+  --shadow-ambient-sm: var(--shadow-sm);
+  --shadow-ambient-md: var(--shadow-md);
+  --shadow-ambient-lg: var(--shadow-lg);
+  --shadow-deck: var(--shadow-floating-deck);
+
+  /* Spatial Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-pill: 9999px;
+}
+
+
+@layer components {
+  /* ==========================================================================
+     TIER 1: STICKY NAVIGATION, WORKSPACE HEADERS & STATUS BARS
+     ========================================================================== */
+  .glass-bar {
+    background-color: var(--glass-surface-primary);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: var(--glass-specular-highlight);
+    transform: translateZ(0); /* Force dedicated GPU compositing layer */
+  }
+
+  /* ==========================================================================
+     TIER 2: FLOATING DECKS, iOS/visionOS DOCKS, COMMAND PALETTE & MODALS
+     ========================================================================== */
+  .glass-deck {
+    position: relative;
+    background-color: var(--glass-surface-elevated);
+    backdrop-filter: blur(24px) saturate(190%);
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    border: 1px solid var(--border-default);
+    box-shadow: var(--shadow-floating-deck);
+    transform: translateZ(0);
+    isolation: isolate;
+  }
+
+  /* ==========================================================================
+     TIER 3: TRANSIENT HUDs, FLOATING PILLS, POPOVERS & MEDIA CONTROLS
+     ========================================================================== */
+  .glass-pill {
+    background-color: var(--glass-surface-subtle);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid var(--border-default);
+    box-shadow: var(--shadow-xs), var(--glass-specular-highlight);
+    border-radius: var(--radius-pill);
+  }
+
+  /* ==========================================================================
+     MODAL & DRAWER BACKDROP CURTAIN
+     ========================================================================== */
+  .glass-backdrop {
+    background-color: var(--glass-backdrop-overlay);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* Graceful Fallback for Low-Power Devices or Browsers Lacking Backdrop-Filter */
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass-bar,
+    .glass-deck,
+    .glass-pill {
+      background-color: var(--surface-elevated);
+    }
+  }
+}
+
+
+
+@layer utilities {
+  :root {
+    --noise-pattern: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='argonNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23argonNoise)'/%3E%3C/svg%3E");
+    --noise-opacity: 0.015;
+  }
+
+  .dark {
+    --noise-opacity: 0.022;
+  }
+
+  /* Apply to Bento Cards, Floating Decks, or Hero Canvases for Tactile Grain */
+  .surface-grain {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .surface-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image: var(--noise-pattern);
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    opacity: var(--noise-opacity);
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
+  }
+}
+
+
+
+@layer components {
+  @keyframes argon-shimmer {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  .skeleton-shimmer {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-canvas-recessed);
+    border-radius: var(--radius-sm);
+    isolation: isolate;
+  }
+
+  .skeleton-shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translate3d(-100%, 0, 0);
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      oklch(1.000 0.000 0.0 / 0.55) 50%,
+      transparent 100%
+    );
+    animation: argon-shimmer 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    will-change: transform;
+  }
+
+  .dark .skeleton-shimmer::after {
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      oklch(1.000 0.000 0.0 / 0.06) 50%,
+      transparent 100%
+    );
+  }
+}
+
+
+
+
 @import "tailwindcss";
 
 @theme {
